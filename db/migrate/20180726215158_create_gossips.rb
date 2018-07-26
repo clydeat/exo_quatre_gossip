@@ -6,7 +6,7 @@ class CreateGossips < ActiveRecord::Migration[5.2]
       t.timestamps :date
       t.references :user, foreign_key: true
 
-      t.timestamps
+    t.timestamps
     end
   end
 end

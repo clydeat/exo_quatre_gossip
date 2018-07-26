@@ -3,8 +3,9 @@ class CreatePrivateMessages < ActiveRecord::Migration[5.2]
     create_table :private_messages do |t|
       t.text :content
       t.timestamps :date
+      t.references :user, foreign_key: true
 
-      t.timestamps
+    t.timestamps
     end
   end
 end
